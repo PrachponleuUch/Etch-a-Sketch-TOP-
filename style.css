@@ -1,0 +1,49 @@
+body{
+  display: block;
+  height: 100vh;
+  width: 100%;
+}
+
+main{
+  height: 42vw;
+  width: 28vw;
+  margin-left: -10vw;
+  background-color:red;
+  display: flex;
+  flex-direction: column;
+  margin-left: 35vw;
+}
+
+#maindiv1{
+  height: 17%;
+  width: 99%;
+  padding-left: 0.5%;
+}
+
+.container{
+  height: 65%;
+  width: 99%;
+  padding-left: 0.5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#maindiv3{
+  height: 17%;
+  width: 99%;
+  padding-left: 0.5%;
+}
+
+.divContainer{
+  background-color: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.divContainer div{
+  background-color: white;
+  flex: 1;
+}
+
