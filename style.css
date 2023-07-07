@@ -7,7 +7,6 @@ body{
 main{
   height: 42vw;
   width: 28vw;
-  margin-left: -10vw;
   background-color:red;
   display: flex;
   flex-direction: column;
@@ -18,6 +17,34 @@ main{
   height: 17%;
   width: 99%;
   padding-left: 0.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  padding: 0;
+  margin: 0;
+  font-family: 'Rock Salt', cursive;
+  font-size: medium;
+}
+
+.gridBtn{
+  display: flex;
+  gap: 10px;
+}
+
+button{
+  color: black;
+  border: solid yellow;
+  box-shadow: 2px 2px 0 0 red, 4px 4px 0 0 yellow;
+}
+
+button:hover{
+  color: darkgoldenrod;
+  box-shadow: 3px 3px 0 0 red, 6px 6px 0 0 yellow;
+  transform: translate(-1px, -1px);
 }
 
 .container{
@@ -33,6 +60,10 @@ main{
   height: 17%;
   width: 99%;
   padding-left: 0.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .divContainer{
@@ -47,3 +78,19 @@ main{
   flex: 1;
 }
 
+@media screen and (max-width: 800px) {
+  main{
+    height: 60vw;
+    width: 40vw;
+    margin-left: 28vw;
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+  main{
+    height: 96vw;
+    width: 64vw;
+    margin-left: 17vw;
+  }
+}
