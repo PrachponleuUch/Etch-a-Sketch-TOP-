@@ -67,16 +67,24 @@ rgbBtn.addEventListener('click', function(e){
   hover(colorRGB);
 });
 
-// let g16 = document.querySelector('.one6');
-// g16.addEventListener('click', function(e){
-//   e.preventDefault();
-//   removeGrid
-//   createGrid(16);
-// });
+let g16 = document.querySelector('.one6');
+g16.addEventListener('click', function(e){
+  e.preventDefault();
+  removeGrid();
+  createGrid(16);
+});
 
-// let g32 = document.querySelector('.three2');
-// g32.addEventListener('click', function(e){
-//   e.preventDefault();
-//   createGrid(32);
-// });
+let g32 = document.querySelector('.three2');
+g32.addEventListener('click', function(e){
+  e.preventDefault();
+  removeGrid();
+  createGrid(32);
+});
+
+let g64 = document.querySelector('.six4');
+g64.addEventListener('click', function(e){
+  e.preventDefault();
+  removeGrid();
+  createGrid(64);
+});
 
