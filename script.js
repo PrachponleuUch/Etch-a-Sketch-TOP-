@@ -33,6 +33,10 @@ const colorBlack = function(div){
   div.style.cssText = `background: black`;
 }
 
+const colorWhite = function(div){
+  div.style.cssText = `background: white`;
+}
+
 const colorRGB = function(div){
   div.style.cssText = `background: ${setRandomBg()}`;
 }
@@ -66,6 +70,13 @@ rgbBtn.addEventListener('click', function(e){
   e.preventDefault();
   hover(colorRGB);
 });
+
+let eraserBtn = document.querySelector('.eraser');
+eraserBtn.addEventListener('click', function(e){
+  e.preventDefault();
+  hover(colorWhite);
+});
+
 
 let g16 = document.querySelector('.one6');
 g16.addEventListener('click', function(e){
