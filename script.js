@@ -12,6 +12,7 @@ const createGrid = function(sq){
   }
 }
 
+//Callback Function to Different Color Functions
 const hover = function(func){
   let divs = document.querySelectorAll('.divContainerChild');
   divs.forEach(div => {
@@ -41,10 +42,9 @@ const colorRGB = function(div){
   div.style.cssText = `background: ${setRandomBg()}`;
 }
 
-
+//16777215 = FFFFFF, toString(16) = Hex String
 const setRandomBg = function(){
   const randomColor = Math.floor(Math.random()*16777215).toString(16);
-  //document.body.style.backgroundColor = "#" + randomColor;
   return `#${randomColor}`;
 }
 
