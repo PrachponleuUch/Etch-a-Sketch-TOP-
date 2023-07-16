@@ -17,7 +17,6 @@ const hover = function(func){
   let divs = document.querySelectorAll('.divContainerChild');
   divs.forEach(div => {
     div.addEventListener('mouseenter', function(e){
-      e.preventDefault();
       func(div);
     });
   });
@@ -55,46 +54,39 @@ const removeGrid = function(){
 createGrid(16);
 let resetBtn = document.querySelector('.reset');
 resetBtn.addEventListener('click', function(e){
-  e.preventDefault();
   reset();
 });
 
 let blackBtn = document.querySelector('.black');
 blackBtn.addEventListener('click', function(e){
-  e.preventDefault();
   hover(colorBlack);
 });
 
 let rgbBtn = document.querySelector('.rgb');
 rgbBtn.addEventListener('click', function(e){
-  e.preventDefault();
   hover(colorRGB);
 });
 
 let eraserBtn = document.querySelector('.eraser');
 eraserBtn.addEventListener('click', function(e){
-  e.preventDefault();
   hover(colorWhite);
 });
 
 
 let g16 = document.querySelector('.one6');
 g16.addEventListener('click', function(e){
-  e.preventDefault();
   removeGrid();
   createGrid(16);
 });
 
 let g32 = document.querySelector('.three2');
 g32.addEventListener('click', function(e){
-  e.preventDefault();
   removeGrid();
   createGrid(32);
 });
 
 let g64 = document.querySelector('.six4');
 g64.addEventListener('click', function(e){
-  e.preventDefault();
   removeGrid();
   createGrid(64);
 });
